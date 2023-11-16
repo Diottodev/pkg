@@ -1,13 +1,13 @@
-# ni
+# pkg
 
 ~~*`npm i` in a yarn project, again? F\*\*k!*~~
 
-**ni** - use the right package manager
+**pkg** - use the right package manager
 
 <br>
 
 <pre>
-npm i -g <b>@antfu/ni</b>
+npm i -g <b>@nico-diotto-dev/pkg</b>
 </pre>
 
 <a href='https://docs.npmjs.com/cli/v6/commands/npm'>npm</a> · <a href='https://yarnpkg.com'>yarn</a> · <a href='https://pnpm.io/'>pnpm</a> · <a href='https://bun.sh/'>bun</a>
@@ -16,10 +16,10 @@ npm i -g <b>@antfu/ni</b>
 <br>
 
 
-### `ni` - install
+### `pkg` - install
 
 ```bash
-ni
+pkg
 
 # npm install
 # yarn install
@@ -28,7 +28,7 @@ ni
 ```
 
 ```bash
-ni vite
+pkg vite
 
 # npm i vite
 # yarn add vite
@@ -37,7 +37,7 @@ ni vite
 ```
 
 ```bash
-ni @types/node -D
+pkg @types/node -D
 
 # npm i @types/node -D
 # yarn add @types/node -D
@@ -46,7 +46,7 @@ ni @types/node -D
 ```
 
 ```bash
-ni --frozen
+pkg --frozen
 
 # npm ci
 # yarn install --frozen-lockfile (Yarn 1)
@@ -56,7 +56,7 @@ ni --frozen
 ```
 
 ```bash
-ni -g eslint
+pkg -g eslint
 
 # npm i -g eslint
 # yarn global add eslint (Yarn 1)
@@ -68,10 +68,10 @@ ni -g eslint
 
 <br>
 
-### `nr` - run
+### `pkr` - run
 
 ```bash
-nr dev --port=3000
+pkr dev --port=3000
 
 # npm run dev -- --port=3000
 # yarn run dev --port=3000
@@ -80,24 +80,24 @@ nr dev --port=3000
 ```
 
 ```bash
-nr
+pkr
 
 # interactively select the script to run
 # supports https://www.npmjs.com/package/npm-scripts-info convention
 ```
 
 ```bash
-nr -
+pkr -
 
 # rerun the last command
 ```
 
 <br>
 
-### `nlx` - download & execute
+### `pkx` - download & execute
 
 ```bash
-nlx vitest
+pkx vitest
 
 # npx vitest
 # yarn dlx vitest
@@ -107,10 +107,10 @@ nlx vitest
 
 <br>
 
-### `nu` - upgrade
+### `pk up` - upgrade
 
 ```bash
-nu
+pk up
 
 # npm upgrade
 # yarn upgrade (Yarn 1)
@@ -120,7 +120,7 @@ nu
 ```
 
 ```bash
-nu -i
+pk up -i
 
 # (not available for npm & bun)
 # yarn upgrade-interactive (Yarn 1)
@@ -130,10 +130,10 @@ nu -i
 
 <br>
 
-### `nun` - uninstall
+### `pk un` - uninstall
 
 ```bash
-nun webpack
+pk un webpack
 
 # npm uninstall webpack
 # yarn remove webpack
@@ -142,7 +142,7 @@ nun webpack
 ```
 
 ```bash
-nun -g silent
+pk un -g silent
 
 # npm uninstall -g silent
 # yarn global remove silent
@@ -152,10 +152,10 @@ nun -g silent
 
 <br>
 
-### `nci` - clean install
+### `pk clean` - clean install
 
 ```bash
-nci
+pk clean
 
 # npm ci
 # yarn install --frozen-lockfile
@@ -167,10 +167,10 @@ if the corresponding node manager is not present, this command will install it g
 
 <br>
 
-### `na` - agent alias
+### `pk ag` - agent alias
 
 ```bash
-na
+pk ag
 
 # npm
 # yarn
@@ -179,7 +179,7 @@ na
 ```
 
 ```bash
-na run foo
+pk ag run foo
 
 # npm run foo
 # yarn run foo
@@ -193,17 +193,17 @@ na run foo
 
 ```bash
 # ?               | Print the command execution depends on the agent
-ni vite ?
+pkg vite ?
 
 # -C              | Change directory before running the command
-ni -C packages/foo vite
-nr -C playground dev
+pkg -C packages/foo vite
+pkr -C playground dev
 
 # -v, --version   | Show version number
-ni -v
+pkg -v
 
 # -h, --help      | Show help
-ni -h
+pkg -h
 ```
 
 <br>
@@ -224,7 +224,7 @@ globalAgent=npm
 # ~/.bashrc
 
 # custom configuration file path
-export NI_CONFIG_FILE="$HOME/.config/ni/nirc"
+export PKG_CONFIG_FILE="$HOME/.config/pkg/pkgrc"
 ```
 
 <br>
@@ -233,44 +233,6 @@ export NI_CONFIG_FILE="$HOME/.config/ni/nirc"
 
 **ni** assumes that you work with lockfiles (and you should)
 
-Before it runs, it will detect your `yarn.lock` / `pnpm-lock.yaml` / `package-lock.json` / `bun.lockb` to know current package manager (or `packageManager` field in your packages.json if specified), and runs the [corresponding commands](https://github.com/antfu/ni/blob/main/src/agents.ts).
+Before it runs, it will detect your `yarn.lock` / `pnpm-lock.yaml` / `package-lock.json` / `bun.lockb` to know current package manager (or `packageManager` field in your packages.json if specified), and runs the [corresponding commands](https://github.com/Diottodev/pkg/blob/main/src/agents.ts).
 
-### Trouble shooting
 
-#### Conflicts with PowerShell
-
-PowerShell comes with a built-in alias `ni` for the `New-Item` cmdlet. To remove the alias in your current PowerShell session in favor of this package, use the following command:
-
-```PowerShell
-'Remove-Item Alias:ni -Force -ErrorAction Ignore'
-```
-
-If you want to persist the changes, you can add them to your PowerShell profile. The profile path is accessible within the `$profile` variable. The ps1 profile file can normally be found at
-
-- PowerShell 5 (Windows PowerShell): `C:\Users\USERNAME\Documents\WindowsPowerShell\Microsoft.PowerShell_profile.ps1`
-- PowerShell 7: `C:\Users\USERNAME\Documents\PowerShell\Microsoft.PowerShell_profile.ps1`
-- VSCode: `C:\Users\USERNAME\Documents\PowerShell\Microsoft.VSCode_profile.ps1`
-
-You can use the following script to remove the alias at shell start by adding the above command to your profile:
-
-```PowerShell
-if (-not (Test-Path $profile)) {
-  New-Item -ItemType File -Path (Split-Path $profile) -Force -Name (Split-Path $profile -Leaf)
-}
-
-$profileEntry = 'Remove-Item Alias:ni -Force -ErrorAction Ignore'
-$profileContent = Get-Content $profile
-if ($profileContent -notcontains $profileEntry) {
-  ("`n" + $profileEntry) | Out-File $profile -Append -Force -Encoding UTF8
-}
-```
-
-#### `nx` and `nix` is no longer available
-
-We renamed `nx`/`nix` to `nlx` to avoid conflicts with the other existing tools - [nx](https://nx.dev/) and [nix](https://nixos.org/). You can always alias them back on your shell configuration file (`.zshrc`, `.bashrc`, etc).
-
-```bash
-alias nx="nlx"
-# or
-alias nix="nlx"
-```
