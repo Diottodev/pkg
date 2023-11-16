@@ -7,7 +7,7 @@ const customRcPath = process.env.NI_CONFIG_FILE;
 const home = process.platform === 'win32'
     ? process.env.USERPROFILE
     : process.env.HOME;
-const defaultRcPath = path.join(home || '~/', '.nirc');
+const defaultRcPath = path.join(home || '~/', '.pkgrc');
 const rcPath = customRcPath || defaultRcPath;
 const defaultConfig = {
     defaultAgent: 'prompt',

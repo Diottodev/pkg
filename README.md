@@ -211,7 +211,7 @@ pkg -h
 ### Config
 
 ```ini
-; ~/.nirc
+; ~/.pkgrc
 
 ; fallback when no lock found
 defaultAgent=npm # default "prompt"
