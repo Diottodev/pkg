@@ -1,7 +1,7 @@
 {
-  "name": "pkg-manager",
+  "name": "@nico-diotto-dev/pkg",
   "type": "commonjs",
-  "version": "1.0.0-beta.0",
+  "version": "1.0.1-beta.0",
   "packageManager": "pnpm@8.10.2",
   "description": "Use the right package manager",
   "author": "Nicolas Diotto <nicodiottodev@gmail.com>",
@@ -43,7 +43,7 @@
     "pkr": "esno src/commands/pkr.ts",
     "build": "unbuild",
     "stub": "unbuild --stub",
-    "release": "bumpp && npm publish",
+    "release": "bumpp && npm publish --access=public",
     "lint": "gts lint",
     "test": "vitest",
     "clean": "gts clean",
