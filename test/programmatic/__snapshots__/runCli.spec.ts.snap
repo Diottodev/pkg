@@ -1,0 +1,337 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`lockfile > bun > pk ag 1`] = `"bun"`;
+
+exports[`lockfile > bun > pk ag run foo 1`] = `"bun run foo"`;
+
+exports[`lockfile > bun > pk un -g foo 1`] = `"npm uninstall -g foo"`;
+
+exports[`lockfile > bun > pk un foo 1`] = `"bun remove foo"`;
+
+exports[`lockfile > bun > pk up -i 1`] = `"bun update"`;
+
+exports[`lockfile > bun > pk up 1`] = `"bun update"`;
+
+exports[`lockfile > bun > pkg --frozen 1`] = `"bun install --no-save"`;
+
+exports[`lockfile > bun > pkg -g foo 1`] = `"npm i -g foo"`;
+
+exports[`lockfile > bun > pkg 1`] = `"bun install"`;
+
+exports[`lockfile > bun > pkg foo -D 1`] = `"bun add foo -d"`;
+
+exports[`lockfile > bun > pkg foo 1`] = `"bun add foo"`;
+
+exports[`lockfile > bun > pkx 1`] = `"bunx foo"`;
+
+exports[`lockfile > npm > pk ag 1`] = `"npm"`;
+
+exports[`lockfile > npm > pk ag run foo 1`] = `"npm run foo"`;
+
+exports[`lockfile > npm > pk un -g foo 1`] = `"npm uninstall -g foo"`;
+
+exports[`lockfile > npm > pk un foo 1`] = `"npm uninstall foo"`;
+
+exports[`lockfile > npm > pk up -i 1`] = `"Command \\"upgrade-interactive\\" is not support by agent \\"npm\\""`;
+
+exports[`lockfile > npm > pk up 1`] = `"npm update"`;
+
+exports[`lockfile > npm > pkg --frozen 1`] = `"npm ci"`;
+
+exports[`lockfile > npm > pkg -g foo 1`] = `"npm i -g foo"`;
+
+exports[`lockfile > npm > pkg 1`] = `"npm i"`;
+
+exports[`lockfile > npm > pkg foo -D 1`] = `"npm i foo -D"`;
+
+exports[`lockfile > npm > pkg foo 1`] = `"npm i foo"`;
+
+exports[`lockfile > npm > pkx 1`] = `"npx foo"`;
+
+exports[`lockfile > pnpm > pk ag 1`] = `"pnpm"`;
+
+exports[`lockfile > pnpm > pk ag run foo 1`] = `"pnpm run foo"`;
+
+exports[`lockfile > pnpm > pk un -g foo 1`] = `"npm uninstall -g foo"`;
+
+exports[`lockfile > pnpm > pk un foo 1`] = `"pnpm remove foo"`;
+
+exports[`lockfile > pnpm > pk up -i 1`] = `"pnpm update -i"`;
+
+exports[`lockfile > pnpm > pk up 1`] = `"pnpm update"`;
+
+exports[`lockfile > pnpm > pkg --frozen 1`] = `"pnpm i --frozen-lockfile"`;
+
+exports[`lockfile > pnpm > pkg -g foo 1`] = `"npm i -g foo"`;
+
+exports[`lockfile > pnpm > pkg 1`] = `"pnpm i"`;
+
+exports[`lockfile > pnpm > pkg foo -D 1`] = `"pnpm add foo -D"`;
+
+exports[`lockfile > pnpm > pkg foo 1`] = `"pnpm add foo"`;
+
+exports[`lockfile > pnpm > pkx 1`] = `"pnpm dlx foo"`;
+
+exports[`lockfile > pnpm@6 > pk ag 1`] = `"pnpm"`;
+
+exports[`lockfile > pnpm@6 > pk ag run foo 1`] = `"pnpm run foo"`;
+
+exports[`lockfile > pnpm@6 > pk un -g foo 1`] = `"npm uninstall -g foo"`;
+
+exports[`lockfile > pnpm@6 > pk un foo 1`] = `"pnpm remove foo"`;
+
+exports[`lockfile > pnpm@6 > pk up -i 1`] = `"pnpm update -i"`;
+
+exports[`lockfile > pnpm@6 > pk up 1`] = `"pnpm update"`;
+
+exports[`lockfile > pnpm@6 > pkg --frozen 1`] = `"pnpm i --frozen-lockfile"`;
+
+exports[`lockfile > pnpm@6 > pkg -g foo 1`] = `"npm i -g foo"`;
+
+exports[`lockfile > pnpm@6 > pkg 1`] = `"pnpm i"`;
+
+exports[`lockfile > pnpm@6 > pkg foo -D 1`] = `"pnpm add foo -D"`;
+
+exports[`lockfile > pnpm@6 > pkg foo 1`] = `"pnpm add foo"`;
+
+exports[`lockfile > pnpm@6 > pkx 1`] = `"pnpm dlx foo"`;
+
+exports[`lockfile > unknown > pk ag 1`] = `"pnpm"`;
+
+exports[`lockfile > unknown > pk ag run foo 1`] = `"pnpm run foo"`;
+
+exports[`lockfile > unknown > pk un -g foo 1`] = `"npm uninstall -g foo"`;
+
+exports[`lockfile > unknown > pk un foo 1`] = `"pnpm remove foo"`;
+
+exports[`lockfile > unknown > pk up -i 1`] = `"pnpm update -i"`;
+
+exports[`lockfile > unknown > pk up 1`] = `"pnpm update"`;
+
+exports[`lockfile > unknown > pkg --frozen 1`] = `"pnpm i --frozen-lockfile"`;
+
+exports[`lockfile > unknown > pkg -g foo 1`] = `"npm i -g foo"`;
+
+exports[`lockfile > unknown > pkg 1`] = `"pnpm i"`;
+
+exports[`lockfile > unknown > pkg foo -D 1`] = `"pnpm add foo -D"`;
+
+exports[`lockfile > unknown > pkg foo 1`] = `"pnpm add foo"`;
+
+exports[`lockfile > unknown > pkx 1`] = `"pnpm dlx foo"`;
+
+exports[`lockfile > yarn > pk ag 1`] = `"yarn"`;
+
+exports[`lockfile > yarn > pk ag run foo 1`] = `"yarn run foo"`;
+
+exports[`lockfile > yarn > pk un -g foo 1`] = `"npm uninstall -g foo"`;
+
+exports[`lockfile > yarn > pk un foo 1`] = `"yarn remove foo"`;
+
+exports[`lockfile > yarn > pk up -i 1`] = `"yarn upgrade-interactive"`;
+
+exports[`lockfile > yarn > pk up 1`] = `"yarn upgrade"`;
+
+exports[`lockfile > yarn > pkg --frozen 1`] = `"yarn install --frozen-lockfile"`;
+
+exports[`lockfile > yarn > pkg -g foo 1`] = `"npm i -g foo"`;
+
+exports[`lockfile > yarn > pkg 1`] = `"yarn install"`;
+
+exports[`lockfile > yarn > pkg foo -D 1`] = `"yarn add foo -D"`;
+
+exports[`lockfile > yarn > pkg foo 1`] = `"yarn add foo"`;
+
+exports[`lockfile > yarn > pkx 1`] = `"npx foo"`;
+
+exports[`lockfile > yarn@berry > pk ag 1`] = `"yarn"`;
+
+exports[`lockfile > yarn@berry > pk ag run foo 1`] = `"yarn run foo"`;
+
+exports[`lockfile > yarn@berry > pk un -g foo 1`] = `"npm uninstall -g foo"`;
+
+exports[`lockfile > yarn@berry > pk un foo 1`] = `"yarn remove foo"`;
+
+exports[`lockfile > yarn@berry > pk up -i 1`] = `"yarn upgrade-interactive"`;
+
+exports[`lockfile > yarn@berry > pk up 1`] = `"yarn upgrade"`;
+
+exports[`lockfile > yarn@berry > pkg --frozen 1`] = `"yarn install --frozen-lockfile"`;
+
+exports[`lockfile > yarn@berry > pkg -g foo 1`] = `"npm i -g foo"`;
+
+exports[`lockfile > yarn@berry > pkg 1`] = `"yarn install"`;
+
+exports[`lockfile > yarn@berry > pkg foo -D 1`] = `"yarn add foo -D"`;
+
+exports[`lockfile > yarn@berry > pkg foo 1`] = `"yarn add foo"`;
+
+exports[`lockfile > yarn@berry > pkx 1`] = `"npx foo"`;
+
+exports[`packager > bun > pk ag 1`] = `"pnpm"`;
+
+exports[`packager > bun > pk ag run foo 1`] = `"pnpm run foo"`;
+
+exports[`packager > bun > pk un -g foo 1`] = `"npm uninstall -g foo"`;
+
+exports[`packager > bun > pk un foo 1`] = `"pnpm remove foo"`;
+
+exports[`packager > bun > pk up -i 1`] = `"pnpm update -i"`;
+
+exports[`packager > bun > pk up 1`] = `"pnpm update"`;
+
+exports[`packager > bun > pkg --frozen 1`] = `"pnpm i --frozen-lockfile"`;
+
+exports[`packager > bun > pkg -g foo 1`] = `"npm i -g foo"`;
+
+exports[`packager > bun > pkg 1`] = `"pnpm i"`;
+
+exports[`packager > bun > pkg foo -D 1`] = `"pnpm add foo -D"`;
+
+exports[`packager > bun > pkg foo 1`] = `"pnpm add foo"`;
+
+exports[`packager > bun > pkx 1`] = `"pnpm dlx foo"`;
+
+exports[`packager > npm > pk ag 1`] = `"pnpm"`;
+
+exports[`packager > npm > pk ag run foo 1`] = `"pnpm run foo"`;
+
+exports[`packager > npm > pk un -g foo 1`] = `"npm uninstall -g foo"`;
+
+exports[`packager > npm > pk un foo 1`] = `"pnpm remove foo"`;
+
+exports[`packager > npm > pk up -i 1`] = `"pnpm update -i"`;
+
+exports[`packager > npm > pk up 1`] = `"pnpm update"`;
+
+exports[`packager > npm > pkg --frozen 1`] = `"pnpm i --frozen-lockfile"`;
+
+exports[`packager > npm > pkg -g foo 1`] = `"npm i -g foo"`;
+
+exports[`packager > npm > pkg 1`] = `"pnpm i"`;
+
+exports[`packager > npm > pkg foo -D 1`] = `"pnpm add foo -D"`;
+
+exports[`packager > npm > pkg foo 1`] = `"pnpm add foo"`;
+
+exports[`packager > npm > pkx 1`] = `"pnpm dlx foo"`;
+
+exports[`packager > pnpm > pk ag 1`] = `"pnpm"`;
+
+exports[`packager > pnpm > pk ag run foo 1`] = `"pnpm run foo"`;
+
+exports[`packager > pnpm > pk un -g foo 1`] = `"npm uninstall -g foo"`;
+
+exports[`packager > pnpm > pk un foo 1`] = `"pnpm remove foo"`;
+
+exports[`packager > pnpm > pk up -i 1`] = `"pnpm update -i"`;
+
+exports[`packager > pnpm > pk up 1`] = `"pnpm update"`;
+
+exports[`packager > pnpm > pkg --frozen 1`] = `"pnpm i --frozen-lockfile"`;
+
+exports[`packager > pnpm > pkg -g foo 1`] = `"npm i -g foo"`;
+
+exports[`packager > pnpm > pkg 1`] = `"pnpm i"`;
+
+exports[`packager > pnpm > pkg foo -D 1`] = `"pnpm add foo -D"`;
+
+exports[`packager > pnpm > pkg foo 1`] = `"pnpm add foo"`;
+
+exports[`packager > pnpm > pkx 1`] = `"pnpm dlx foo"`;
+
+exports[`packager > pnpm@6 > pk ag 1`] = `"pnpm"`;
+
+exports[`packager > pnpm@6 > pk ag run foo 1`] = `"pnpm run foo"`;
+
+exports[`packager > pnpm@6 > pk un -g foo 1`] = `"npm uninstall -g foo"`;
+
+exports[`packager > pnpm@6 > pk un foo 1`] = `"pnpm remove foo"`;
+
+exports[`packager > pnpm@6 > pk up -i 1`] = `"pnpm update -i"`;
+
+exports[`packager > pnpm@6 > pk up 1`] = `"pnpm update"`;
+
+exports[`packager > pnpm@6 > pkg --frozen 1`] = `"pnpm i --frozen-lockfile"`;
+
+exports[`packager > pnpm@6 > pkg -g foo 1`] = `"npm i -g foo"`;
+
+exports[`packager > pnpm@6 > pkg 1`] = `"pnpm i"`;
+
+exports[`packager > pnpm@6 > pkg foo -D 1`] = `"pnpm add foo -D"`;
+
+exports[`packager > pnpm@6 > pkg foo 1`] = `"pnpm add foo"`;
+
+exports[`packager > pnpm@6 > pkx 1`] = `"pnpm dlx foo"`;
+
+exports[`packager > unknown > pk ag 1`] = `"pnpm"`;
+
+exports[`packager > unknown > pk ag run foo 1`] = `"pnpm run foo"`;
+
+exports[`packager > unknown > pk un -g foo 1`] = `"npm uninstall -g foo"`;
+
+exports[`packager > unknown > pk un foo 1`] = `"pnpm remove foo"`;
+
+exports[`packager > unknown > pk up -i 1`] = `"pnpm update -i"`;
+
+exports[`packager > unknown > pk up 1`] = `"pnpm update"`;
+
+exports[`packager > unknown > pkg --frozen 1`] = `"pnpm i --frozen-lockfile"`;
+
+exports[`packager > unknown > pkg -g foo 1`] = `"npm i -g foo"`;
+
+exports[`packager > unknown > pkg 1`] = `"pnpm i"`;
+
+exports[`packager > unknown > pkg foo -D 1`] = `"pnpm add foo -D"`;
+
+exports[`packager > unknown > pkg foo 1`] = `"pnpm add foo"`;
+
+exports[`packager > unknown > pkx 1`] = `"pnpm dlx foo"`;
+
+exports[`packager > yarn > pk ag 1`] = `"pnpm"`;
+
+exports[`packager > yarn > pk ag run foo 1`] = `"pnpm run foo"`;
+
+exports[`packager > yarn > pk un -g foo 1`] = `"npm uninstall -g foo"`;
+
+exports[`packager > yarn > pk un foo 1`] = `"pnpm remove foo"`;
+
+exports[`packager > yarn > pk up -i 1`] = `"pnpm update -i"`;
+
+exports[`packager > yarn > pk up 1`] = `"pnpm update"`;
+
+exports[`packager > yarn > pkg --frozen 1`] = `"pnpm i --frozen-lockfile"`;
+
+exports[`packager > yarn > pkg -g foo 1`] = `"npm i -g foo"`;
+
+exports[`packager > yarn > pkg 1`] = `"pnpm i"`;
+
+exports[`packager > yarn > pkg foo -D 1`] = `"pnpm add foo -D"`;
+
+exports[`packager > yarn > pkg foo 1`] = `"pnpm add foo"`;
+
+exports[`packager > yarn > pkx 1`] = `"pnpm dlx foo"`;
+
+exports[`packager > yarn@berry > pk ag 1`] = `"pnpm"`;
+
+exports[`packager > yarn@berry > pk ag run foo 1`] = `"pnpm run foo"`;
+
+exports[`packager > yarn@berry > pk un -g foo 1`] = `"npm uninstall -g foo"`;
+
+exports[`packager > yarn@berry > pk un foo 1`] = `"pnpm remove foo"`;
+
+exports[`packager > yarn@berry > pk up -i 1`] = `"pnpm update -i"`;
+
+exports[`packager > yarn@berry > pk up 1`] = `"pnpm update"`;
+
+exports[`packager > yarn@berry > pkg --frozen 1`] = `"pnpm i --frozen-lockfile"`;
+
+exports[`packager > yarn@berry > pkg -g foo 1`] = `"npm i -g foo"`;
+
+exports[`packager > yarn@berry > pkg 1`] = `"pnpm i"`;
+
+exports[`packager > yarn@berry > pkg foo -D 1`] = `"pnpm add foo -D"`;
+
+exports[`packager > yarn@berry > pkg foo 1`] = `"pnpm add foo"`;
+
+exports[`packager > yarn@berry > pkx 1`] = `"pnpm dlx foo"`;
