@@ -1,7 +1,7 @@
 {
-  "name": "pkg",
+  "name": "pkg-manager",
   "type": "commonjs",
-  "version": "0.21.11",
+  "version": "0.01.0",
   "packageManager": "pnpm@8.10.2",
   "description": "Use the right package manager",
   "author": "Nicolas Diotto <nicodiottodev@gmail.com>",
